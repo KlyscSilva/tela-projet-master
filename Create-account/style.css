@@ -1,0 +1,236 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+/* Esquerda da pagina */
+.left-page {
+    background-color: #02021c;
+    width: 45%;
+    display: flex;
+    align-items: center;
+    text-align: -webkit-center;
+}
+
+.left {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+p {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 200;
+    margin: 15px 0;
+}
+
+.button-left {
+    width: 30%;
+    height: 45px;
+    border: none;
+    border-radius: 30px;
+    color: #000000;
+    font-weight: 500;
+    cursor: pointer;
+    background: white;
+}
+
+.button-left:hover {
+    background-color: #43e61a;
+    color: #ffffff;
+}
+
+/* Esquerda da pagina */
+
+.right-page {
+    width: 55%;
+    text-align: -webkit-center;
+
+}
+
+h2 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 40px;
+    margin-top: 8%;
+    color: #02021c;
+}
+
+.form-right {
+    margin-top: 30px;
+}
+
+/* Input */
+
+.input-form{
+    margin: 20px;
+    padding: 5px;
+    border: none;
+    border-radius: 26px;
+    caret-color: #1100ff;
+    background-color:#eef5f3;
+    width: 330px;
+    height: 48px;
+    cursor: pointer;
+    outline: none;
+
+}
+
+.input-form:hover{
+    background-color: #c4e217;
+    opacity: 0.7;
+    outline:none;
+    font-size: 15px;
+}
+
+::placeholder{
+    color: #030303;
+    opacity: 0.7;
+    padding: 10px;
+    
+}
+
+/* Fim Input */
+
+
+/* Redes sociais */
+.links {
+    display: flex;
+    justify-content: center;
+}
+
+.redes-sociais {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 0.5px solid #000000;
+    margin-left: 25px;
+    align-items: center;
+    justify-content: space-around;
+    background: transparent;
+    cursor: pointer;
+}
+
+.redes-sociais:first-child {
+    margin-left: 0;
+}
+
+.redes-sociais:hover {
+    background-color: #d2d2e0;
+    border: none;
+    opacity: 0.8;
+}
+
+.img-links {
+    width: 30px;
+    height: 30px;
+}
+
+/* Fim das redes sociais */
+
+/* Input */
+
+.forms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-form {
+    margin: 20px 0;
+    padding: 5px;
+    border: none;
+    border-radius: 26px;
+    caret-color: #1100ff;
+    background-color: #eef5f3;
+    width: 330px;
+    height: 48px;
+    outline: none;
+}
+
+.input-form:hover {
+    background-color: rgb(116, 117, 116, .3);
+}
+
+::placeholder {
+    color: #030303;
+    opacity: 0.7;
+    padding: 10px;
+
+}
+
+/* Fim Input */
+
+/* Inicio button cadastrar */
+.button-register {
+    width: 30%;
+    height: 45px;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    background: #02021c;
+}
+
+.button-register:hover {
+    opacity: .8;
+}
+
+/* Fim do button de cadastrar */
+
+/* Defina a animação */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.page-1 {
+    transition: transform 1s ease-in-out;
+}
+
+.page-2 {
+    transition: transform 1s ease-in-out;
+}
+
+/* Animação para ir para a esquerda */
+
+
+/* Animação para ir para a direita */
+.transition-right {
+    animation: slide-right 2s ease-in-out forwards;
+}
+
+@keyframes slide-right {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
